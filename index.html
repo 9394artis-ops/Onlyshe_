@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>onlyshe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family: 'Georgia', serif;
+  background:#f4f4f4;
+  color:#222;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+  background:#111;
+  color:#fff;
+}
+nav h1{
+  font-weight:normal;
+  letter-spacing:1px;
+}
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+nav ul li{
+  cursor:pointer;
+  opacity:0.85;
+}
+nav ul li:hover{opacity:1}
+
+/* PROFILE */
+.profile{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.profile img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:2px solid #fff;
+  object-fit:cover;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:60px 20px;
+}
+.hero p{
+  margin-top:10px;
+  opacity:0.7;
+}
+
+/* SECTION COMMON */
+.section{
+  padding:50px 20px;
+}
+.section h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* QUOTES (LIGHT) */
+.quotes{
+  background:#ffffff;
+}
+.q-card{
+  max-width:700px;
+  margin:15px auto;
+  background:#fafafa;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  text-align:center;
+  font-size:18px;
+}
+
+/* SHAYARI (DARK) */
+.shayari{
+  background:radial-gradient(circle at top, #2a1b3d, #0e0b16);
+  color:#f5e6c8;
+}
+.s-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  max-width:1000px;
+  margin:auto;
+}
+.s-card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  padding:22px;
+  border-radius:15px;
+  text-align:center;
+}
+.s-card h3{
+  color:#f3c77c;
+  margin-bottom:10px;
+}
+.eng{
+  font-size:14px;
+  opacity:0.8;
+  margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111;
+  color:#aaa;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>onlyshe</h1>
+  <ul>
+    <li>Quotes</li>
+    <li>Shayari</li>
+  </ul>
+  <div class="profile">
+    <!-- Photo baad me change kar sakte ho -->
+    <img src="https://via.placeholder.com/100">
+  </div>
+</nav>
+
+<div class="hero">
+  <h2>Words for heart & soul</h2>
+  <p>Dharmik • Life • Love • Pain</p>
+</div>
+
+<!-- QUOTES SECTION -->
+<div class="section quotes">
+  <h2>🌼 Quotes</h2>
+
+  <div class="q-card">
+    🕉️ Jo mila hai usme santosh rakho,<br>
+    kyunki ishwar zarurat se zyada kabhi nahi dete.
+  </div>
+
+  <div class="q-card">
+    🌱 Zindagi ka sach yahi hai,<br>
+    jo chupchaap seh leta hai wahi mazboot hota hai.
+  </div>
+
+</div>
+
+<!-- SHAYARI SECTION -->
+<div class="section shayari">
+  <h2>❤️ Shayari</h2>
+
+  <div class="s-grid">
+
+    <div class="s-card">
+      <h3>Romantic</h3>
+      Raahon mein mulaqat zaroori nahi hoti,<br>
+      kuch chehre bas yaadon mein bas jaate hain.
+      <div class="eng">
+        Meetings are not always necessary,<br>
+        some faces just turn into memories.
+      </div>
+    </div>
+
+    <div class="s-card">
+      <h3>Sad</h3>
+      Kuch dard likhe nahi jaate,<br>
+      bas mehsoos hote hain.
+      <div class="eng">
+        Some pain can’t be written,<br>
+        only felt.
+      </div>
+    </div>
+
+    <div class="s-card">
+      <h3>Deep</h3>
+      Khamoshi bhi ek jawaab hoti hai,<br>
+      jab alfaaz thak jaate hain.
+      <div class="eng">
+        Silence is also an answer,<br>
+        when words get tired.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © onlyshe — words that feel.
+</footer>
+
+</body>
+</html>
