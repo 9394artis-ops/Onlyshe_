@@ -1,0 +1,106 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:#eee;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:#111;
+}
+
+.logo{
+  color:#ffb703;
+  letter-spacing:2px;
+}
+
+.nav a{
+  color:#ccc;
+  margin-left:15px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* HERO */
+.hero{
+  min-height:60vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.quote-box{
+  background:#181818;
+  padding:25px;
+  border-radius:10px;
+  max-width:500px;
+  text-align:center;
+}
+
+.quote-hindi{
+  font-size:18px;
+  line-height:1.6;
+}
+
+.quote-english{
+  margin-top:10px;
+  font-size:14px;
+  opacity:.8;
+}
+
+.copy-btn{
+  margin-top:15px;
+  padding:8px 20px;
+  border:none;
+  border-radius:20px;
+  background:#ffb703;
+  cursor:pointer;
+}
+
+/* SECTIONS */
+.section{
+  padding:40px 20px;
+}
+
+.section h2{
+  margin-bottom:20px;
+  color:#ffb703;
+}
+
+.card{
+  background:#181818;
+  padding:20px;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+
+/* PROFILE */
+.profile-box{
+  text-align:center;
+}
+
+.profile-box img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  margin-bottom:10px;
+}
+
+/* FOOTER */
+.footer{
+  background:#111;
+  text-align:center;
+  padding:15px;
+  font-size:13px;
+  opacity:.7;
+}
