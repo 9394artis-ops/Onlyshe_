@@ -2,105 +2,132 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body{
+  font-family: 'Georgia', serif;
   background:#0f0f0f;
   color:#eee;
 }
 
-/* HEADER */
-.header{
+/* NAVBAR */
+nav{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 20px;
+  padding:15px 25px;
   background:#111;
 }
 
-.logo{
-  color:#ffb703;
-  letter-spacing:2px;
+nav h1{
+  font-weight:normal;
+  letter-spacing:1px;
 }
 
-.nav a{
-  color:#ccc;
-  margin-left:15px;
-  text-decoration:none;
-  font-size:14px;
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+nav ul li{
+  cursor:pointer;
+  opacity:0.8;
+}
+
+nav ul li:hover{
+  opacity:1;
+}
+
+/* PROFILE */
+.profile{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.profile img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:2px solid #fff;
+  object-fit:cover;
 }
 
 /* HERO */
 .hero{
-  min-height:60vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.quote-box{
-  background:#181818;
-  padding:25px;
-  border-radius:10px;
-  max-width:500px;
   text-align:center;
+  padding:70px 20px;
 }
 
-.quote-hindi{
-  font-size:18px;
-  line-height:1.6;
+.hero h2{
+  font-size:28px;
+  margin-bottom:10px;
 }
 
-.quote-english{
-  margin-top:10px;
-  font-size:14px;
-  opacity:.8;
+.hero p{
+  opacity:0.8;
+  max-width:600px;
+  margin:auto;
 }
 
-.copy-btn{
-  margin-top:15px;
-  padding:8px 20px;
-  border:none;
-  border-radius:20px;
-  background:#ffb703;
-  cursor:pointer;
-}
-
-/* SECTIONS */
+/* SECTION */
 .section{
   padding:40px 20px;
 }
 
-.section h2{
-  margin-bottom:20px;
-  color:#ffb703;
+.section h3{
+  text-align:center;
+  margin-bottom:25px;
+  color:#f3c77c;
 }
 
-.card{
-  background:#181818;
-  padding:20px;
-  border-radius:8px;
-  margin-bottom:15px;
+/* GRID */
+.s-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  max-width:1000px;
+  margin:auto;
 }
 
-/* PROFILE */
-.profile-box{
+/* CARD */
+.s-card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  padding:22px;
+  border-radius:15px;
   text-align:center;
 }
 
-.profile-box img{
-  width:100px;
-  height:100px;
-  border-radius:50%;
+.s-card h4{
+  color:#f3c77c;
   margin-bottom:10px;
 }
 
-/* FOOTER */
-.footer{
-  background:#111;
-  text-align:center;
-  padding:15px;
+.eng{
+  font-size:14px;
+  opacity:0.8;
+  margin-top:10px;
+}
+
+/* COPY BUTTON */
+.copy-btn{
+  margin-top:12px;
+  padding:8px 15px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+  background:#f3c77c;
+  color:#111;
   font-size:13px;
-  opacity:.7;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111;
+  color:#aaa;
+  font-size:14px;
 }
