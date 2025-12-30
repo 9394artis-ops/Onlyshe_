@@ -138,3 +138,9 @@ footer{
   margin-bottom: 10px; /* Har quote ke beech spacing */
   line-height: 1.6;    /* Readable line spacing */
 }
+.social-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
